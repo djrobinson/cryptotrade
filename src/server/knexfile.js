@@ -1,7 +1,7 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: process.env.PSQL_CONNECTION
+    connection: 'postgres://localhost/cryptotrade'
   },
   production: {
     client: 'pg',

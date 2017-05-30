@@ -1,7 +1,10 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cryptotrade'
+    connection: 'postgres://localhost/cryptotrade',
+    migrations: {
+      directory: __dirname + '/migrations'
+    }
   },
   production: {
     client: 'pg',

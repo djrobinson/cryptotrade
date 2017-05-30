@@ -5,6 +5,14 @@ module.exports = {
   },
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL + '?ssl=true'
+    connection: {
+      host : process.env.DB_HOST,
+      user : process.env.DB_USERNAME,
+      password : process.env.DB_PASSWORD,
+      database : 'exchanges_dev'
+    },
+    migrations: {
+      directory: __dirname + '/migrations'
+    }
   }
 };

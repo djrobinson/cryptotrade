@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 
+var getmarkets = require('./jobs/getmarkets');
 
 // *** routes *** //
 var routes = require('./routes/index.js');
@@ -14,7 +15,7 @@ var routes = require('./routes/index.js');
 
 // *** express instance *** //
 var app = express();
-
+getmarkets.open();
 
 // *** view engine *** //
 var swig = new swig.Swig();

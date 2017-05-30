@@ -6,11 +6,13 @@
     "start": "node ./src/server/bin/www"
   },
   "dependencies": {
+    "autobahn": "^17.5.2",
     "body-parser": "~1.17.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.8",
     "express": "~4.15.3",
     "knex": "^0.13.0",
+    "moment": "^2.18.1",
     "mongoose": "^4.4.10",
     "morgan": "~1.8.2",
     "pg": "^6.2.3",

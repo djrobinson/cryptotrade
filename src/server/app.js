@@ -5,7 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var swig = require('swig');l
+var swig = require('swig');
 
 var getmarkets = require('./jobs/getmarkets');
 

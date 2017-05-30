@@ -6,13 +6,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
+var knex = require('knex');
 
 var getmarkets = require('./jobs/getmarkets');
 
 // *** routes *** //
 var routes = require('./routes/index.js');
 
-
+knex.migrate.latest();
 // *** express instance *** //
 var app = express();
 getmarkets.open();
